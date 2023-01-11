@@ -1,0 +1,37 @@
+.doing {
+    padding-top: 0;
+}
+
+.doing__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    margin-top: 0;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.doing__list {
+    // display: flex;
+    justify-content: space-between;
+}
+
+.doing__card {
+    position: relative;
+}
+
+.doing-card__overlay {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: var(--bg-doing-card-overlay);
+    color: var(--white-color);
+    width: 100%;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+    text-align: center;
+}

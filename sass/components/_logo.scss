@@ -1,0 +1,11 @@
+.logo {
+    display: block;
+    font-family: Raleway, raleway;
+    font-weight: 700;
+    font-size: 26px;
+    color: var(--accent-color);
+    text-decoration: none;
+}
+.logo__span {
+    color: var(--logo-text-color);
+}
