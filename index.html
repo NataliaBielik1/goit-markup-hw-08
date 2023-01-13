@@ -5,10 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
-  
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet">
-      <link
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
       integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
@@ -16,11 +18,11 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/styles.css" />
-      <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <header class="header">
-     <div class="container header__wrapper">
+     <div class="header__wrapper container ">
        
       <nav class="header__nav">
           <a href="./index.html" class="logo header__logo">
@@ -52,76 +54,95 @@
           </svg>+38 096 111 11 11</a></li>
       </ul> 
       </div>
-        <button class="header__burger" type="button">
-            <svg width="40" height="40">
-                <use href="img/icons.svg#icon-burger"></use>
+        <button
+          type="button" 
+          class="menu-button"  
+          aria-expanded="false" 
+          aria-controls="menu-container"
+          data-menu-button >
+            <svg 
+              width="40" 
+              height="40"
+              aria-label="Перемикач мобільного меню">
+              <use class="icon-cross" href="img/icons.svg#icon-close_24px"></use>  
+              <use class="icon-menu" href="img/icons.svg#icon-burger"></use>
+                
             </svg>
         </button> 
+       <div class="menu-container" id="menu-container"  data-menu>
+        <div class="navigation"></div>
+        <div class="contact"></div>
+       </div>
+        
+        
       </div> 
-    </header>
+    </header> -->
     <main>
-      <section class="hero section">
+       <section class="hero section">
       <div class="container"> 
+         <div class="box5">
+ 123456тест
+         </div>
         <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
         <button type="button" class="button primary" data-modal-open>Замовити послугу</button>
       </div>
-      </section>
+      </section> 
       <section class="features section">
         <div class="container">
-        <h2 class="features__title visually-hidden">Наші особливості</h2>
-        <ul class="features__list list">
-          <li class="item features__item">
-            <div class="features__card">
-               <svg class="features-card__icon" width="70" height="70">
-                <use href="./img/icons.svg#icon-antenna-1"></use>
-               </svg>
-            </div>
-            <h3 class="features-card__title">Увага до деталей</h3>
-            <p class="features-card__text">
-              Ідейні міркування, і навіть початок повсякденної роботи з
-              формування позиції.
-            </p>
-          </li>
-          <li class="item features__item">
-            <div class="features__card">
-               <svg class="features-card__icon" width="70" height="70">
-                <use href="./img/icons.svg#icon-clock-1"></use>
-               </svg>
-            </div>
-            <h3 class="features-card__title">Пунктуальність</h3>
-            <p class="features-card__text">
-              Завдання організації, особливо рамки і місце навчання кадрів тягне
-              у себе.
-            </p>
-          </li>
-          <li class="item features__item">
-            <div class="features__card">
-               <svg class="features-card__icon" width="70" height="70">
-                <use href="./img/icons.svg#icon-diagram-1"></use>
-               </svg>
-            </div>
-            <h3 class="features-card__title">Планування</h3>
-            <p class="features-card__text">
-              Так само консультація з широким активом значною мірою зумовлює.
-            </p>
-          </li>
-          <li class="item features__item">
-            <div class="features__card">
-               <svg class="features-card__icon" width="70" height="70">
-                <use href="./img/icons.svg#icon-astronaut-1"></use>
-               </svg>
-            </div>
-            <h3 class="features-card__title">Сучасні технології</h3>
-            <p class="features-card__text">
-              Значимість цих проблем настільки очевидна, що реалізація планових
-              завдань.
-            </p>
-          </li>
-        </ul>
+          <h2 class="features__title visually-hidden">Наші особливості</h2>
+          <ul class="features__list list">
+            <li class="item features__item">
+              <div class="features__card">
+                <svg class="features-card__icon" width="70" height="70">
+                  <use href="./img/icons.svg#icon-antenna-1"></use>
+                </svg>
+              </div>
+              <h3 class="features-card__title">Увага до деталей</h3>
+              <p class="features-card__text">
+                Ідейні міркування, і навіть початок повсякденної роботи з
+                формування позиції.
+              </p>
+            </li>
+            <li class="item features__item">
+              <div class="features__card">
+                <svg class="features-card__icon" width="70" height="70">
+                  <use href="./img/icons.svg#icon-clock-1"></use>
+                </svg>
+              </div>
+              <h3 class="features-card__title">Пунктуальність</h3>
+              <p class="features-card__text">
+                Завдання організації, особливо рамки і місце навчання кадрів
+                тягне у себе.
+              </p>
+            </li>
+            <li class="item features__item">
+              <div class="features__card">
+                <svg class="features-card__icon" width="70" height="70">
+                  <use href="./img/icons.svg#icon-diagram-1"></use>
+                </svg>
+              </div>
+              <h3 class="features-card__title">Планування</h3>
+              <p class="features-card__text">
+                Так само консультація з широким активом значною мірою зумовлює.
+              </p>
+            </li>
+            <li class="item features__item">
+              <div class="features__card">
+                <svg class="features-card__icon" width="70" height="70">
+                  <use href="./img/icons.svg#icon-astronaut-1"></use>
+                </svg>
+              </div>
+              <h3 class="features-card__title">Сучасні технології</h3>
+              <p class="features-card__text">
+                Значимість цих проблем настільки очевидна, що реалізація
+                планових завдань.
+              </p>
+            </li>
+          </ul>
         </div>
       </section>
-      
-      <section class="doing section">
+
+       <section class="doing section">
         <div class="container">
         <h2 class="doing__title">Чим ми займаємося</h2>
         <ul class="doing__list list">
@@ -157,8 +178,8 @@
           </li>
         </ul>
         </div>
-      </section>
-      <section class="team section">
+      </section> 
+       <section class="team section">
         <div class="container">
         <h2 class="team__title">Наша команда</h2>
         <ul class="team__list list">
@@ -239,7 +260,7 @@
           <li class="team__item">
             <img src="./img/foto3.jpg" alt="Микола Тарасов" width="270">
             <div class="team__card">
-              <h3 class="team__name"">Микола Тарасов</h3>
+              <h3 class="team__name">Микола Тарасов</h3>
               <p class="team__text">Marketing</p>
                 <ul class="social__list list">
                 <li class="social__item">
@@ -312,8 +333,8 @@
           </li>
         </ul>
         </div>
-      </section>
-      <section class="clients">
+      </section> 
+       <section class="clients">
         <div class="container clients-box">
           <h2 class="clients__title">Постійні клієнти</h2>
           <ul class="clients__list list">
@@ -361,12 +382,10 @@
             </li>
           </ul>
         </div>
-      </section>
-
-
+      </section> 
     </main>
-<!--футер-->
-<footer class="footer">
+    <!--футер-->
+     <footer class="footer">
   <div class="container footer__wrapper">
     <div class="footer__box1">
        <a href="/" class="logo footer__logo">Web<span class="footer__logo-span logo__span">Studio</span></a>
@@ -425,16 +444,17 @@
 <svg class="footer-button__icon" width="24" height="24">
   <use href="./img/icons.svg#icon-icon-send"></use>
 </svg>
-</button>
-</div>
-</div>
+     </button>
+    </div>
+   </div>
     
  </form>
   
-  </div>
+ 
+ </div>
  
 </footer>
-<div class="backdrop is-hidden" data-modal>
+     <div class="backdrop is-hidden" data-modal>
   <div class="modal">
      <button data-modal-close type="button" class="button-close modal__close">
     <svg class="icon-close" width="106" height="60">
@@ -509,7 +529,8 @@
   </form> 
   </div>
   
-</div>
- <script src="./js/modal.js"></script>
+</div> 
+    <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

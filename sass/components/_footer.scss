@@ -4,7 +4,7 @@
     padding-bottom: 60px;
 }
 .footer__wrapper {
-    // display: flex;
+    display: flex;
     align-items: baseline;
     justify-content: space-between;
 }
@@ -84,7 +84,7 @@
 }
 
 .footer__social-list {
-    // display: flex;
+    display: flex;
     gap: 10px;
 }
 
@@ -93,7 +93,7 @@
 }
 
 .footer__social-link {
-    // display: flex;
+    display: flex;
     background-color: var(--footer-social-link);
     width: 44px;
     height: 44px;
@@ -122,7 +122,7 @@
 }
 
 .footer__field {
-    // display: flex;
+    display: flex;
 }
 
 .footer__button {

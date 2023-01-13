@@ -1,22 +1,16 @@
 .header {
     border: 1px solid var(--header-border-color);
-        @media (max-width: 480px) {
-                padding-top: 10px 15px;
-            }
-   
 }
 .header__wrapper {
     display: flex;
     align-items: center;
-    @media (max-width: 480px) {
-            padding-top: 10px 15px;
-        }
+    position: relative;
+    outline: 3px solid blue;
 }
 
 .header__logo {
     display: inline-block;
     margin-right: 94px;
-
 }
 
 .header__nav {
@@ -125,28 +119,8 @@
     display: flex;
     margin-left: auto;
     align-items: center;
-    @media (max-width: 480px) {
-            display: none;
-        }
-
-   
 
 }
-.header__list{
 
-    @media (max-width: 480px) {
-            display: none;
-        }
-}
-.header__burger{
-    // position: absolute;
-    // top: 22px;
-    // right: 22px;
-    // display: none;
-
-    @media (min-width: 480px) {
-        display: none;
-    }
-}
 
 

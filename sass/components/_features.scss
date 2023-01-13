@@ -10,15 +10,23 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     margin-bottom: 10px;
+
+    @media screen and (max-width: 480px) {
+            text-align: center;
 }
 
 .features__list {
     // display: flex;
 }
 
-.features__item {
-    width: 270px;
+.features__item { 
+    // width: 270px;
+    width: 100%;
     margin-right: 30px;
+    @media screen and (max-width: 480px) {
+            margin-bottom: 30px;
+    
+        }
 }
 
 .features__item:last-child {
@@ -33,13 +41,15 @@
 
 .features__card {
     display: flex;
-    width: 270px;
+    // width: 270px;
     height: 120px;
     background-color: var(--bg-port-button-secondary);
     align-items: center;
     justify-content: center;
     margin-bottom: 30px;
     border-radius: 4px;
+
+    
 }
 
 .visually-hidden {
