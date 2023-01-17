@@ -52,22 +52,22 @@
           </li>
         </ul>
       </div>
-      <button type="button" class="menu-button js-open-menu'" aria-expanded="false" aria-controls="menu-container"
-        data-menu-button>
+      <button type="button" class="menu-button is-open js-open-menu" aria-expanded="false"
+        aria-controls="menu-container" data-menu-button>
         <svg width="40" height="40" aria-label="Перемикач мобільного меню">
-          <use class="icon-cross" href="img/icons.svg#icon-close_24px"></use>
+          <use class="icon-cross js-close-menu" href="img/icons.svg#icon-close_24px"></use>
           <use class="icon-menu" href="img/icons.svg#icon-burger"></use>
         </svg>
       </button>
-      <div class="menu-container js-menu-container" id="menu-container" data-menu>
-        <div class="navigation"></div>
-        <div class="contact"></div>
+      <div class="menu-container js-menu-container is-open" id="menu-container" data-menu>
+        <div class="navigation">navigation</div>
+        <div class="contact">contact</div>
       </div>
     </div>
   </header>
-  -->
+
   <main>
-    <section class="hero section">
+    <!-- <section class="hero section">
       <div class="container">
         <div class="box5">123456тест</div>
         <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
@@ -75,7 +75,7 @@
           Замовити послугу
         </button>
       </div>
-    </section>
+    </section> -->
     <section class="features section">
       <div class="container">
         <h2 class="features__title visually-hidden">Наші особливості</h2>
@@ -362,7 +362,7 @@
     </section>
   </main>
   <!--футер-->
-  <footer class="footer">
+  <!-- <footer class="footer">
     <div class="container footer__wrapper">
       <div class="footer__box1">
         <a href="/" class="logo footer__logo">Web<span class="footer__logo-span logo__span">Studio</span></a>
@@ -430,8 +430,8 @@
         </form>
       </div>
     </div>
-  </footer>
-  <div class="backdrop is-hidden" data-modal>
+  </footer> -->
+  <!-- <div class="backdrop is-hidden" data-modal>
     <div class="modal">
       <button data-modal-close type="button" class="button-close modal__close">
         <svg class="icon-close" width="106" height="60">
@@ -484,9 +484,10 @@
         <button class="button form-submit" type="submit">Відправити</button>
       </form>
     </div>
-  </div>
+  </div> -->
   <script src="./js/modal.js"></script>
   <script src="./js/mobile-menu.js"></script>
+  <script src="./js/menu.js"></script>
 </body>
 
 </html>

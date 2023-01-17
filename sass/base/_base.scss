@@ -22,23 +22,33 @@ img {
     height: auto;
 }
 .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    @media screen and (max-width:1200px) {
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }
+
+    @media screen and (min-width:1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;   
+        }
+    
+   
 }
 
 .container {
     // width: 1200px;
-    width: 100%;
+    // width: 100%;
     margin-left: auto;
     margin-right: auto;
     padding: 0 15px;
     outline: 2px solid red;
 
-    @media screen and (min-width: 480pxw) {
+    @media screen and (min-width: 480px) {
         width: 480px;
+        
     }
-
-    @media screen and (min-width: 768pxw) {
+   
+    @media screen and (min-width: 768px) {
         width: 768px;
     }
 

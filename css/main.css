@@ -25,24 +25,31 @@ img {
   height: auto;
 }
 
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+@media screen and (max-width: 1200px) {
+  .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .container {
-  width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding: 0 15px;
   outline: 2px solid red;
 }
-@media screen and (min-width: 480pxw) {
+@media screen and (min-width: 480px) {
   .container {
     width: 480px;
   }
 }
-@media screen and (min-width: 768pxw) {
+@media screen and (min-width: 768px) {
   .container {
     width: 768px;
   }
@@ -132,6 +139,12 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .header__list {
+    display: none;
+  }
 }
 
 .site-nav__link {
@@ -259,6 +272,16 @@ p {
       -ms-flex-align: center;
           align-items: center;
 }
+@media screen and (max-width: 768px) {
+  .header__contacts {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header__contacts {
+    display: block;
+  }
+}
 
 .logo {
   display: block;
@@ -332,11 +355,6 @@ p {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.features {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 .features-card__title {
   font-weight: 700;
   font-size: 14px;
@@ -345,24 +363,36 @@ p {
   text-transform: uppercase;
   margin-bottom: 10px;
 }
-@media screen and (max-width: 480px) {
-  .features-card__title {
-    text-align: center;
+
+@media screen and (min-width: 768px) {
+  .features__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .features__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
   }
 }
 
-.features__item {
-  width: 100%;
-  margin-right: 30px;
-}
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 768px) {
   .features__item {
+    width: calc((100% - 60px) / 2);
+    margin: 15px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .features__item:not(:last-child) {
     margin-bottom: 30px;
   }
-}
-
-.features__item:last-child {
-  margin-right: 0;
 }
 
 .features-card__text {
@@ -403,6 +433,11 @@ p {
 
 .doing {
   padding-top: 0;
+}
+@media screen and (max-width: 1200px) {
+  .doing {
+    display: none;
+  }
 }
 
 .doing__title {
@@ -446,20 +481,48 @@ p {
 .team {
   background-color: var(--bg-team-section-color);
 }
+@media screen and (max-width: 768px) {
+  .team {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
 
 .team__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   letter-spacing: 0.03em;
-  margin-bottom: 50px;
   text-align: center;
 }
+@media screen and (max-width: 1200px) {
+  .team__title {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__title {
+    margin-bottom: 50px;
+  }
+}
 
-.team__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+@media screen and (min-width: 768px) {
+  .team__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
 }
 
 .team__text {
@@ -472,14 +535,26 @@ p {
 }
 
 .team__item {
-  margin-right: 30px;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  outline: 2px solid greenyellow;
 }
-
-.team__item:last-child {
-  margin-right: 0;
+@media screen and (max-width: 767px) {
+  .team__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .team__item {
+    width: calc((100% - 60px) / 2);
+    margin: 15px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__item {
+    gap: 30px;
+  }
 }
 
 .team__card {
@@ -534,11 +609,6 @@ p {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 .clients__title {
   font-weight: 700;
   font-size: 36px;
@@ -549,20 +619,43 @@ p {
   text-align: center;
 }
 
-.clients__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 30px;
+@media screen and (max-width: 1200px) {
+  .clients__list {
+    margin: -15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
-.clients__item {
-  width: 170px;
-  height: 92px;
+@media screen and (max-width: 768px) {
+  .clients__item {
+    width: calc((100% - 60px) / 2);
+    margin: 15px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .clients__item {
+    width: calc((100% - 90px) / 3);
+    margin: 15px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients__item {
+    gap: 30px;
+  }
 }
 
 .clients__link {
-  width: 100%;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1101,15 +1194,10 @@ p {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  padding: 0;
   margin: 0;
+  padding: 0;
   border: none;
-  background-color: transparent;
-}
-@media screen and (min-width: 768) {
-  .menu-button {
-    display: none;
-  }
+  background-color: var(--white-color);
 }
 
 .menu-button .icon-cross {
@@ -1129,16 +1217,8 @@ p {
   top: 100%;
   left: 0;
   width: 100%;
-  background-color: greenyellow;
+  background-color: aqua;
   padding: 20px;
   text-align: center;
   font-size: 20px;
-}
-.menu-container.is-open {
-  display: block;
-}
-@media screen and (max-width: 767px) {
-  .menu-container {
-    display: none;
-  }
 }/*# sourceMappingURL=main.css.map */
