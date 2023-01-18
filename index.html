@@ -52,30 +52,23 @@
           </li>
         </ul>
       </div>
-      <button type="button" class="menu-button is-open js-open-menu" aria-expanded="false"
-        aria-controls="menu-container" data-menu-button>
-        <svg width="40" height="40" aria-label="Перемикач мобільного меню">
-          <use class="icon-cross js-close-menu" href="img/icons.svg#icon-close_24px"></use>
-          <use class="icon-menu" href="img/icons.svg#icon-burger"></use>
+      <button type="button" class="menu-button js-open-menu" aria-expanded="false" aria-controls="menu-container">
+        <svg width="24" height="16" aria-label="Перемикач мобільного меню">
+          <use href="./img/icons.svg#icon-burger"></use>
         </svg>
       </button>
-      <div class="menu-container js-menu-container is-open" id="menu-container" data-menu>
-        <div class="navigation">navigation</div>
-        <div class="contact">contact</div>
-      </div>
     </div>
   </header>
 
   <main>
-    <!-- <section class="hero section">
+    <section class="hero section">
       <div class="container">
-        <div class="box5">123456тест</div>
         <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
         <button type="button" class="button primary" data-modal-open>
           Замовити послугу
         </button>
       </div>
-    </section> -->
+    </section>
     <section class="features section">
       <div class="container">
         <h2 class="features__title visually-hidden">Наші особливості</h2>
@@ -136,19 +129,22 @@
         <h2 class="doing__title">Чим ми займаємося</h2>
         <ul class="doing__list list">
           <li class="doing__card">
-            <img src="./img/img2.jpg" alt="Людина працює на комп'ютері" width="370" />
+            <img srcset="./img/features-1200-1@1x.jpg 1x, ./img/features-1200-1@2x.jpg 2x"
+              alt="Людина працює на комп'ютері" width="370" />
             <div class="doing-card__overlay">
               <h3>Десктопні додатки</h3>
             </div>
           </li>
           <li class="doing__card">
-            <img src="./img/img1.jpg" alt="Людина працює на планшеті" width="370" />
+            <img srcset="./img/features-1200-2@1x.jpg 1x, ./img/features-1200-2@2x.jpg 2x"
+              alt="Людина працює на планшеті" width="370" />
             <div class="doing-card__overlay">
               <h3>Мобільні додатки</h3>
             </div>
           </li>
           <li class="doing__card">
-            <img src="./img/img3.jpg" alt="Людина працює на телефоні" width="370" />
+            <img srcset="./img/features-1200-3@1x.jpg 1x, ./img/features-1200-3@2x.jpg 2x"
+              alt="Людина працює на телефоні" width="370" />
             <div class="doing-card__overlay">
               <h3>Дизайнерські рішення</h3>
             </div>
@@ -161,7 +157,24 @@
         <h2 class="team__title">Наша команда</h2>
         <ul class="team__list list">
           <li class="team__item">
-            <img src="./img/foto1.jpg" alt="Ігор Дем'яненко" width="270" />
+            <picture>
+              <source srcset="
+                 ./img/team-1200-1@1x.jpg 1x,
+                    ./img/team-1200-1@2x.jpg 2x
+                  " media="(min-width: 1200px)" />
+
+              <source srcset="
+                  ./img/team-768-1@1x.jpg 1x,
+                    ./img/team-768-1@2x.jpg 2x
+                  " media="(min-width: 768px)" />
+
+              <source srcset="
+                   ./img/team-480-1@1x.jpg 1x,
+                    ./img/team-480-1@2x.jpg 2x
+                  " />
+              <img  src=" ./img/team-480-1@1x.jpg" alt="Ігор Дем'яненко" />
+            </picture>
+
             <div class="team__card">
               <h3 class="team__name">Ігор Дем'яненко</h3>
               <p class="team__text">Product Designer</p>
@@ -198,7 +211,24 @@
             </div>
           </li>
           <li class="team__item">
-            <img src="./img/foto2.jpg" alt="Ольга Рєпіна" width="270" />
+
+            <picture>
+              <source srcset="
+                               ./img/team-1200-2@1x.jpg 1x,
+                                  ./img/team-1200-2@2x.jpg 2x
+                                " media="(min-width: 1200px)" />
+
+              <source srcset="
+                                ./img/team-768-2@1x.jpg 1x,
+                                  ./img/team-768-2@2x.jpg 2x
+                                " media="(min-width: 768px)" />
+
+              <source srcset="
+                                 ./img/team-480-2@1x.jpg 1x,
+                                  ./img/team-480-2@2x.jpg 2x
+                                " />
+              <img  src=" ./img/team-480-2@1x.jpg" alt="Ольга Рєпіна" />
+            </picture>
             <div class="team__card">
               <h3 class="team__name">Ольга Рєпіна</h3>
               <p class="team__text">Frontend Developer</p>
@@ -235,7 +265,23 @@
             </div>
           </li>
           <li class="team__item">
-            <img src="./img/foto3.jpg" alt="Микола Тарасов" width="270" />
+            <picture>
+              <source srcset="
+                        ./img/team-1200-3@1x.jpg 1x,
+                          ./img/team-1200-3@2x.jpg 2x
+                        " media="(min-width: 1200px)" />
+
+              <source srcset="
+                      ./img/team-768-3@1x.jpg 1x,
+                        ./img/team-768-3@2x.jpg 2x
+                      " media="(min-width: 768px)" />
+
+              <source srcset="
+                        ./img/team-480-3@1x.jpg 1x,
+                        ./img/team-480-3@2x.jpg 2x
+                      " />
+              <img  src=" ./img/team-480-3@1x.jpg" alt="Микола Тарасов" />
+            </picture>
             <div class="team__card">
               <h3 class="team__name">Микола Тарасов</h3>
               <p class="team__text">Marketing</p>
@@ -272,7 +318,24 @@
             </div>
           </li>
           <li class="team__item">
-            <img src="./img/foto4.jpg" alt="Михайло Єрмаков" width="270" />
+
+            <picture>
+              <source srcset="
+                    ./img/team-1200-4@1x.jpg 1x,
+                      ./img/team-1200-4@2x.jpg 2x
+                    " media="(min-width: 1200px)" />
+
+              <source srcset="
+                    ./img/team-768-4@1x.jpg 1x,
+                      ./img/team-768-4@2x.jpg 2x
+                    " media="(min-width: 768px)" />
+
+              <source srcset="
+                          ./img/team-480-4@1x.jpg 1x,
+                          ./img/team-480-4@2x.jpg 2x
+                        " />
+              <img  src=" ./img/team-480-4@1x.jpg" alt="Михайло Єрмаков" />
+            </picture>
             <div class="team__card">
               <h3 class="team__name">Михайло Єрмаков</h3>
               <p class="team__text">UI Designer</p>
@@ -362,7 +425,7 @@
     </section>
   </main>
   <!--футер-->
-  <!-- <footer class="footer">
+  <footer class="footer">
     <div class="container footer__wrapper">
       <div class="footer__box1">
         <a href="/" class="logo footer__logo">Web<span class="footer__logo-span logo__span">Studio</span></a>
@@ -430,8 +493,44 @@
         </form>
       </div>
     </div>
-  </footer> -->
-  <!-- <div class="backdrop is-hidden" data-modal>
+  </footer>
+  <div class="menu-container js-menu-container " id="mobile-menu">
+    <button type="button" class="menu-button  js-close-menu menu-close" aria-expanded="false"
+      aria-controls="menu-container">
+      <svg width="24" height="16" aria-label="Перемикач мобільного меню">
+        <use href="./img/icons.svg#icon-close_24px"></use>
+      </svg>
+    </button>
+
+    <nav class="menu-nav">
+      <ul class="list menu-nav-list">
+        <li class="menu-nav-item"><a href="./index.html" class=" current menu-nav-link link">Студія</a></li>
+        <li class="menu-nav-item"><a href="./portfolio.html" class="menu-nav-link link">Портфоліо</a></li>
+        <li class="menu-nav-item"><a href="#" class="menu-nav-link link">Контакти</a></li>
+      </ul>
+
+      <ul class="menu-contacts list">
+        <li class="menu-contacts-item"><a href="tel:+380961111111" class="link menu-contacts-link menu-tel">+38 096 111
+            11 11</a>
+        </li>
+        <li class="menu-contacts-item"><a href="mailto:info@devstudio.com"
+            class="link menu-contacts-link">info@devstudio.com</a></li>
+      </ul>
+
+      <ul class="list menu-socials">
+        <li class="menu-socials-item"><a href="" class="link menu-socials-link">Instagram</a></li>
+        <li class="menu-socials-item"><a href="" class="link menu-socials-link">Twitter</a></li>
+        <li class="menu-socials-item"><a href="" class="link menu-socials-link">Facebook</a></li>
+        <li class="menu-socials-item"><a href="" class="link menu-socials-link">LinkedIn</a></li>
+      </ul>
+    </nav>
+
+
+
+
+
+  </div>
+  <div class="backdrop is-hidden" data-modal>
     <div class="modal">
       <button data-modal-close type="button" class="button-close modal__close">
         <svg class="icon-close" width="106" height="60">
@@ -484,10 +583,14 @@
         <button class="button form-submit" type="submit">Відправити</button>
       </form>
     </div>
-  </div> -->
+  </div>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"></script>
   <script src="./js/modal.js"></script>
   <script src="./js/mobile-menu.js"></script>
   <script src="./js/menu.js"></script>
+
 </body>
 
 </html>

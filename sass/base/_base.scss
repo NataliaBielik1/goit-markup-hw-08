@@ -1,67 +1,62 @@
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 *,
 *::before,
 *::after {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 body {
-    font-family: Roboto, sans-serif;
-    font-size: 14px;
-    color: var(--primery-text-color);
-    background-color: var(--white-color);
-    line-height: 1.2;
-    margin: 0;
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  color: var(--primery-text-color);
+  background-color: var(--white-color);
+  line-height: 1.2;
+  margin: 0;
 }
 img {
-    display: block;
-    max-width: 100%;
-    height: auto;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 .section {
-    @media screen and (max-width:1200px) {
-            padding-top: 60px;
-            padding-bottom: 60px;
-        }
+  padding-top: 60px;
+  padding-bottom: 60px;
 
-    @media screen and (min-width:1200px) {
-        padding-top: 94px;
-        padding-bottom: 94px;   
-        }
-    
-   
+  @include desktop {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .container {
-    // width: 1200px;
-    // width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0 15px;
-    outline: 2px solid red;
+  // width: 1200px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px;
+  // outline: 2px solid red;
 
-    @media screen and (min-width: 480px) {
-        width: 480px;
-        
-    }
-   
-    @media screen and (min-width: 768px) {
-        width: 768px;
-    }
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
 
-    @media screen and (min-width:1200px) {
-        width: 1200px;
-    }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
 }
 .link {
-    color: inherit;
-    text-decoration: none;
-    position: relative;
+  color: inherit;
+  text-decoration: none;
+  position: relative;
 }
 
-.box5{
-    background-color: aqua;
+.box5 {
+  background-color: aqua;
 }

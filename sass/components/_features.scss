@@ -1,9 +1,6 @@
 .features {
   // padding-top: 94px;
   // padding-bottom: 94px;
-
- 
-  
 }
 
 .features-card__title {
@@ -13,23 +10,22 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 10px;
+  text-align: center;
 
-  // @media screen and (max-width: 480px) {
-  //   text-align: center;
-  // }
+  @include tablet {
+    text-align: left;
+  }
 }
 
 .features__list {
-  // display: flex;
-    @media screen and (min-width: 768px) {
-        display: flex;
-        flex-wrap: wrap;
-        // margin: -15px;
-      }
-    @media screen and (min-width: 1200px) {
-        display: flex;
-        flex-wrap: nowrap;
-      }
+  @include tablet {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  @include desktop {
+    display: flex;
+    flex-wrap: nowrap;
+  }
 }
 
 .features__item {
@@ -37,22 +33,17 @@
   // width: 100%;
   // margin-right: 30px;
 
-      @media screen and (min-width: 768px) {
-        width: calc((100% - 4 * 15px) / 2);
-        margin: 15px;
-      }
+  @include tablet {
+    width: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+  }
 
-
-
-      &:not(:last-child) {
-          @media screen and (max-width: 767px){
-            margin-bottom: 30px;
-          
-         }
-      }
-    
- }
-
+  &:not(:last-child) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 30px;
+    }
+  }
+}
 
 .features-card__text {
   line-height: 1.7;
